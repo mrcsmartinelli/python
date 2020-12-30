@@ -1,0 +1,55 @@
+#ESPRESSIONI ARITMETICHE
+
+from math import gcd
+
+#VARIABILI
+
+print('INPUT:')
+a = int(input('DIGITA IL PRIMO NUMERO INTERO (es. 7): '))
+b = int(input('DIGITA IL SECONDO NUMERO INTERO (es. 3): '))
+
+#CALCOLI
+
+addizione = a + b
+sottrazione = a - b
+moltiplicazione = a * b
+divisione = a / b
+quoziente = a // b
+resto = a % b
+potenza1 = a ** b
+potenza2 = pow(a,b)         #La potenza la si può calcolare con la funzione pow, in questo caso di perde la precedenza.
+radice2dia = a**(1/2)
+radice2dib = b**(1/2)
+radice3dia = a**(1/3)
+radice3dib = b**(1/3)
+mcd = gcd(a,b)              #Per calcolare il MCD è necessario usare il modulo math.        
+mcm = ((a*b)/mcd)           #Per ricavare il mcm si usa la formula a*b/mcd.
+
+#RISULTATI
+
+print('\nDATI:')
+print("a = {}".format(a))
+print("b = {}".format(b))
+print('\nSOMMA:')
+print("{} + {} = {}.".format(a, b, addizione))
+print('\nSOTTRAZIONE:')
+print("{} - {} = {}.".format(a, b, sottrazione))
+print('\nMOLTIPLICAZIONE:')
+print("{} X {} = {}.".format(a, b, moltiplicazione))
+print('\nDIVISIONE:')
+print("{} / {} = {}.".format(a, b, divisione))
+print('-' * 40)
+print("Il quoziente di {} / {} è uguale a {}.".format(a, b, quoziente))
+print("Il modulo/resto di {} / {} è uguale a {}.".format(a, b, resto))
+print('\nPOTENZA:')
+print("CLASSICO (**): {} elevato a {} è uguale a {}.".format(a, b, potenza1))
+print("POW (pow(x, y)): {} elevato a {} è uguale a {}.".format(a, b, potenza2))
+print('\nRADICI QUADRATA:')
+print("La radice quadrata di {} è uguale a {}.".format(a, radice2dia))
+print("La radice quadrata di {} è uguale a {}.".format(b, radice2dib))
+print('\nRADICI CUBICA:')
+print("La radice cubica di {} è uguale a {}.".format(a, radice3dia))
+print("La radice cubica di {} è uguale a {}.".format(b, radice3dib))
+print('\nMCD / MCM:')
+print("Il MCD tra {} e {} è uguale a {}.".format(a, b, mcd))
+print("Il MCM tra {} e {} è uguale a {}.".format(a, b, mcm))
