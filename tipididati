@@ -1,6 +1,11 @@
+#Tipi di dati
+
 tipo1 = 123.45  #float // Numeri reali
 tipo2 = 12345   #int // Numeri interi
 tipo3 = 'Ciao'  #str // Stringhe
 tipo4 = True   #Bool // Valore booleano
 
-print('FLOAT: {} - Numeri reali\nINT: {} - Numeri interi\nSTR: {} - Stringhe\nBOOL: {} - Valore booleano'.format(tipo1, tipo2, tipo3, tipo4))
+print('FLOAT: {} - Numeri reali'.format(tipo1))
+print('INT: {} - Numeri interi'.format(tipo2))
+print('STR: {} - Stringhe'.format(tipo3))
+print('BOOL: {} - Valore booleano'.format(tipo3))
