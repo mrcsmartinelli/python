@@ -1,0 +1,6 @@
+tipo1 = 123.45  #float // Numeri reali
+tipo2 = 12345   #int // Numeri interi
+tipo3 = 'Ciao'  #str // Stringhe
+tipo4 = False   #Bool // Valore booleano
+
+print('FLOAT: {} - Numeri reali\nINT: {} - Numeri interi\nSTR: {} - Stringhe\nBOOL: {} - Valore booleano'.format(tipo1, tipo2, tipo3, tipo4))
